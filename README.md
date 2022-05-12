@@ -1,8 +1,8 @@
 # MotorBunnySpinnerRewardsTracker
-A simple script used to record MotorBunny Rewards from a spinner *solely to run statistical analysis on*. This should not be used to farm discount codes. I denounce any responsibilty for misuse of the system.
+A simple proof-of-concept script which can record MotorBunny Rewards from a spinner *solely to run statistical analysis on*. . I denounce any responsibilty for misuse of the system, nor do I advise running it.
 
-## Setup
-To run this project, you will need [Python 3](https://www.python.org/downloads/) installed as well as [GeckoDriver](https://github.com/mozilla/geckodriver/releases) installed and setup. Before running the script, please be sure to adjust the `LOOP_COUNT` and `FULLY_QUALIFIED_FILE_PATH` variable values on lines 17 and 19 of main.py to be what best fits your use case. The `PHONE_NUMBER` value on line 21 can also be changed. As it is, it will use a random 10 digit string, but this can fail often and lengthen the run time. You can change it to a valid number at  your own discretion.
+## Dependencies
+This project requires [Python 3](https://www.python.org/downloads/) installed as well as [GeckoDriver](https://github.com/mozilla/geckodriver/releases) installed and setup. It also requires an adjustment to the `LOOP_COUNT` and `FULLY_QUALIFIED_FILE_PATH` variable values on lines 17 and 19 of main.py. The `PHONE_NUMBER` value on line 21 can also be changed. As it is, it would use a random 10 digit string, but this can fail often due to validation. In theory, changing it to a vlaid number will lessen a run time.
 
 ## Example Stats:
 
