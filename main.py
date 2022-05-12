@@ -17,6 +17,8 @@ def random_char(char_num: int, string_type: str):
 LOOP_COUNT = 1000
 # Fully Qualified File path and file name you wish to record to
 FULLY_QUALIFIED_FILE_PATH = 'c:\\users\\phantompooper\\desktop\\motorbunny_codes.txt'
+# Phone number to use, right now, its set to a random nuimebr of digits, but thats not always reliable for validation
+PHONE_NUMBER = random_char(10, string.digits)
 
 i = 0
 driver = webdriver.Firefox()
@@ -37,11 +39,7 @@ while True:
         # enter phone number
         element = WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.ID, 'wlo-phoneNumber-input')))
         element.click()
-
-        # Change to valid phone number
-        # using hardcoded Maryland Domino's Pizza number bc random strings weren't reliably valid
-        # element.send_keys(random_char(10, string.digits))
-        element.send_keys('3016995880')
+        element.send_keys(PHONE_NUMBER)
 
         # check terms and conditions and click spin
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, 'wlo-sms-checkboxInput'))).click()
