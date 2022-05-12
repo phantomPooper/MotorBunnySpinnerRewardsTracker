@@ -75,5 +75,5 @@ while True:
     finally:
         driver.execute_script("location.reload(true);")
 
-# quit driver & close file
+# quit driver
 driver.quit()
