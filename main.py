@@ -16,7 +16,7 @@ def random_char(char_num: int, string_type: str):
 # How many instances you wish to record
 LOOP_COUNT = 1000
 # Fully Qualified File path and file name you wish to record to
-FULLY_QUALIFIED_FILE_PATH = 'c:\\users\\chad\\desktop\\motorbunny_codes.txt'
+FULLY_QUALIFIED_FILE_PATH = 'c:\\users\\phantompooper\\desktop\\motorbunny_codes.txt'
 
 i = 0
 driver = webdriver.Firefox()
