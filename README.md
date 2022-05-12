@@ -6,6 +6,6 @@ This project requires [Python 3](https://www.python.org/downloads/) installed as
 
 ## Example Stats:
 
-A file like [motorbunny_codes.txt](Resources/motorbunny_codes.txt) will be generated. This information can then be used to generate charts on any charting software you'd like for statistical analysis, like so:
+A file like [motorbunny_codes.txt](Resources/motorbunny_codes.txt) would be generated. This information could then be used to generate charts for statistical analysis, like so:
 
 <img src="Resources/MotorBunny.png"/>
